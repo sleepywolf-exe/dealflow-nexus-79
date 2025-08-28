@@ -7,7 +7,15 @@ import CRMLayout from "./components/layout/CRMLayout";
 import Dashboard from "./components/dashboard/Dashboard";
 import LeadsPage from "./pages/LeadsPage";
 import PropertiesPage from "./pages/PropertiesPage";
+import ClientsPage from "./pages/ClientsPage";
 import PipelinePage from "./pages/PipelinePage";
+import CalendarPage from "./pages/CalendarPage";
+import CommunicationsPage from "./pages/CommunicationsPage";
+import DocumentsPage from "./pages/DocumentsPage";
+import PaymentsPage from "./pages/PaymentsPage";
+import AnalyticsPage from "./pages/AnalyticsPage";
+import LoyaltyPage from "./pages/LoyaltyPage";
+import SettingsPage from "./pages/SettingsPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,15 +31,15 @@ const App = () => (
             <Route index element={<Dashboard />} />
             <Route path="leads" element={<LeadsPage />} />
             <Route path="properties" element={<PropertiesPage />} />
-            <Route path="clients" element={<div className="p-6">Clients (Coming Soon)</div>} />
+            <Route path="clients" element={<ClientsPage />} />
             <Route path="pipeline" element={<PipelinePage />} />
-            <Route path="calendar" element={<div className="p-6">Calendar (Coming Soon)</div>} />
-            <Route path="communications" element={<div className="p-6">Communications (Coming Soon)</div>} />
-            <Route path="documents" element={<div className="p-6">Documents (Coming Soon)</div>} />
-            <Route path="payments" element={<div className="p-6">Payments (Coming Soon)</div>} />
-            <Route path="analytics" element={<div className="p-6">Analytics (Coming Soon)</div>} />
-            <Route path="loyalty" element={<div className="p-6">Loyalty (Coming Soon)</div>} />
-            <Route path="settings" element={<div className="p-6">Settings (Coming Soon)</div>} />
+            <Route path="calendar" element={<CalendarPage />} />
+            <Route path="communications" element={<CommunicationsPage />} />
+            <Route path="documents" element={<DocumentsPage />} />
+            <Route path="payments" element={<PaymentsPage />} />
+            <Route path="analytics" element={<AnalyticsPage />} />
+            <Route path="loyalty" element={<LoyaltyPage />} />
+            <Route path="settings" element={<SettingsPage />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
